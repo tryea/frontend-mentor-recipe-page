@@ -17,7 +17,7 @@ export default function Home() {
             }}
           />
         </div>
-        <div className="flex flex-col px-8 py-10 gap-8 sm:px-10">
+        <div className="flex flex-col px-8 py-10 gap-8 sm:px-0">
           <div className="flex flex-col gap-6">
             <h1 className="font-young_serif text-4xl text-dark_charcoal font-normal">
               Simple Omelette Recipe
