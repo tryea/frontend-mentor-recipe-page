@@ -4,11 +4,12 @@ export default function Home() {
   return (
     <div className="flex flex-1 items-center justify-center bg-eggshell sm:py-[124px]">
       <main className="flex flex-col sm:max-w-[736px] sm:p-10 bg-white sm:rounded-3xl">
-        <div className="relative w-full aspect-[656/300] max-h-full ">
+        <div className="relative w-full aspect-[656/300] max-h-full sm:rounded-xl">
           <Image
             src="/images/image-omelette.jpeg"
             fill
             alt="omelette"
+            className="sm:rounded-xl"
             style={{
               inset: " 0px",
               color: "transparent",
