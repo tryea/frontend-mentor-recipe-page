@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${young_serif.variable} ${outfit.variable} bg-white`}
+        className={`${inter.className} ${young_serif.variable} ${outfit.variable}`}
       >
         {children}
       </body>

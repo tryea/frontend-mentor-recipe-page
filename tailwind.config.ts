@@ -19,6 +19,7 @@ const config: Config = {
         snow: "#FFF7FB",
         white_coffee: "#E3DDD7",
         brandy_red: "#854632",
+        eggshell: "#F3E5D7",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
