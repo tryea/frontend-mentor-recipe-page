@@ -2,111 +2,121 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
+    <main className="flex flex-col">
+      <div className="relative w-dvw aspect-[656/300] max-h-full">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src="/images/image-omelette.jpeg"
+          fill
+          alt="omelette"
+          style={{
+            inset: " 0px",
+            color: "transparent",
+            filter: "invert(0)",
+          }}
         />
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+      <div className="flex flex-col px-8 py-10 gap-8">
+        <div className="flex flex-col gap-6">
+          <h1 className="font-young_serif text-4xl text-dark_charcoal font-normal">
+            Simple Omelette Recipe
+          </h1>
+          <p className="text-body-regular">
+            An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.
           </p>
-        </a>
+        </div>
+        <div className="flex flex-col bg-snow p-6 gap-4 rounded-xl">
+          <h5 className="text-dark_raspberry font-semibold text-xl leading-none">
+            Preparation time
+          </h5>
+          <ul className="gap-2 flex flex-col *:list-item *:marker:relative *:marker:top-16 *:marker:block list-inside pl-2 list-disc *:marker:text-dark_raspberry *:text-wenge_brown *:text-body-regular">
+            <li>
+              <span className="font-bold">Total</span>: Approximately 10 minutes
+            </li>
+            <li>
+              <span className="font-bold">Preparation</span>: 5 minutes
+            </li>
+            <li>
+              <span className="font-bold">Cooking</span>: 5 minutes
+            </li>
+          </ul>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        <div className="flex flex-col gap-4">
+          <h5 className="text-heading-m">Ingredients</h5>
+          <ul className="gap-2 flex flex-col *:list-item *:marker:relative *:marker:top-16 *:marker:block list-inside pl-2 list-disc *:marker:text-dark_raspberry *:text-wenge_brown *:text-body-regular">
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>
+              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+            </li>
+          </ul>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        <hr className="h-px bg-white_coffee" />
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+        <div className="flex flex-col gap-4">
+          <h5 className="text-heading-m">Instructions</h5>
+          <ol className="gap-2 flex flex-col *:list-item *:marker:relative *:marker:top-16 *:marker:block list-inside pl-2 list-disc *:marker:text-dark_raspberry *:text-wenge_brown *:text-body-regular">
+            <li>
+              Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
+              pepper until they are well mixed. You can add a tablespoon of
+              water or milk for a fluffier texture.
+            </li>
+            <li>
+              Heat the pan: Place a non-stick frying pan over medium heat and
+              add butter or oil.
+            </li>
+            <li>
+              Cook the omelette: Once the butter is melted and bubbling, pour in
+              the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            </li>
+            <li>
+              Add fillings (optional): When the eggs begin to set at the edges
+              but are still slightly runny in the middle, sprinkle your chosen
+              fillings over one half of the omelette.
+            </li>
+            <li>
+              Fold and serve: As the omelette continues to cook, carefully lift
+              one edge and fold it over the fillings. Let it cook for another
+              minute, then slide it onto a plate.
+            </li>
+            <li>
+              Enjoy: Serve hot, with additional salt and pepper if needed.
+            </li>
+          </ol>
+        </div>
+
+        <hr className="h-px bg-white_coffee" />
+
+        <div className="flex flex-col gap-4">
+          <h5 className="text-heading-m">Nutrition</h5>
+          <p className="text-body-regular">
+            The table below shows nutritional values per serving without the
+            additional fillings.
           </p>
-        </a>
+          <div className="flex flex-col *:flex *:flex-row *:border-b *:h-9 *:border-white_coffee *:*:flex *:*:flex-1 *:px-8 text-body-regular [&_div_div:nth-child(2)]:text-brandy_red">
+            <div>
+              <div>Calories</div>
+              <div>277kcal</div>
+            </div>
+            <div>
+              <div>Carbs</div>
+              <div>0g</div>
+            </div>
+            <div>
+              <div>Protein</div>
+              <div>20g</div>
+            </div>
+            <div>
+              <div>Fat</div>
+              <div>22g</div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
