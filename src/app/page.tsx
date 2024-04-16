@@ -19,7 +19,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col px-8 py-10 gap-8 sm:px-0">
           <div className="flex flex-col gap-6">
-            <h1 className="font-young_serif text-4xl text-dark_charcoal font-normal">
+            <h1 className="font-young_serif text-4xl text-dark_charcoal font-normal sm:text-[2.5rem] leading-none">
               Simple Omelette Recipe
             </h1>
             <p className="text-body-regular">
